@@ -1,7 +1,7 @@
 module.exports = [
   {  
-    name:"The Carter",
-    publishDate:"2004",
+    name:"The Carter III",
+    publishDate:"2012",
     imgURL:"images/theCarter.jpg",
     artist:"lil wayne",
     cd: "The Carter III",

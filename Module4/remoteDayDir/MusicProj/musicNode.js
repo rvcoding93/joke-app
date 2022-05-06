@@ -12,12 +12,13 @@ const server = http.createServer(app)
 app.get('/', (req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    // res.end(songlist);
+    res.send ('hello')
+    res.send(songlist);
     console.log(songlist)
 });
 
 app.get('/albums/0', (req,res) => {
-    res.end()
+    res.end('hello this works')
 });
 
 app.get('/albums/1', (req,res) => {
@@ -25,7 +26,7 @@ app.get('/albums/1', (req,res) => {
 });
 
 app.get('/cds', (req,res) => {
-    res.end()
+    res.end(songlist.cds[''])
 });
 
 server.listen(port, hostname, () => {
